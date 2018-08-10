@@ -423,10 +423,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		"DIKit::DIGenKit::Product" /* DIGenKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DIGenKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"DIKit::DIGenKit::Product" /* DIGenKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DIGenKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"DIKit::DIGenKitTests::Product" /* DIGenKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = DIGenKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		"DIKit::DIKit::Product" /* DIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		"DIKit::dikitgen::Product" /* dikitgen */ = {isa = PBXFileReference; lastKnownFileType = text; path = dikitgen; sourceTree = BUILT_PRODUCTS_DIR; };
+		"DIKit::DIKit::Product" /* DIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"DIKit::dikitgen::Product" /* dikitgen */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = dikitgen; sourceTree = BUILT_PRODUCTS_DIR; };
 		OBJ_100 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		OBJ_101 /* JSONOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONOutput.swift; sourceTree = "<group>"; };
 		OBJ_102 /* Language.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Language.swift; sourceTree = "<group>"; };
@@ -1410,6 +1410,20 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 1000;
+				TargetAttributes = {
+					"DIKit::DIGenKit" = {
+						LastSwiftMigration = 1000;
+					};
+					"DIKit::DIGenKitTests" = {
+						LastSwiftMigration = 1000;
+					};
+					"DIKit::DIKit" = {
+						LastSwiftMigration = 1000;
+					};
+					"DIKit::dikitgen" = {
+						LastSwiftMigration = 1000;
+					};
+				};
 			};
 			buildConfigurationList = OBJ_2 /* Build configuration list for PBXProject "DIKit" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -1958,7 +1972,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGET_NAME = DIGenKit;
 			};
 			name = Debug;
@@ -1988,7 +2002,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGET_NAME = DIGenKit;
 			};
 			name = Release;
@@ -2015,7 +2029,7 @@
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "$(inherited)";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGET_NAME = DIGenKitTests;
 			};
 			name = Debug;
@@ -2042,7 +2056,7 @@
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "$(inherited)";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGET_NAME = DIGenKitTests;
 			};
 			name = Release;
@@ -2067,7 +2081,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGET_NAME = DIKit;
 			};
 			name = Debug;
@@ -2092,7 +2106,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGET_NAME = DIKit;
 			};
 			name = Release;
@@ -2670,7 +2684,7 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
 				SWIFT_FORCE_DYNAMIC_LINK_STDLIB = YES;
 				SWIFT_FORCE_STATIC_LINK_STDLIB = NO;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGET_NAME = dikitgen;
 			};
 			name = Debug;
@@ -2697,7 +2711,7 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
 				SWIFT_FORCE_DYNAMIC_LINK_STDLIB = YES;
 				SWIFT_FORCE_STATIC_LINK_STDLIB = NO;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGET_NAME = dikitgen;
 			};
 			name = Release;
