@@ -4,7 +4,7 @@ import PackageDescription
 let package = Package(
   name: "DIKit",
   platforms: [
-      .macOS(.v10_11), .iOS(.v9), .tvOS(.v9), .watchOS(.v2)
+      .macOS(.v12), .iOS(.v9), .tvOS(.v9), .watchOS(.v2)
   ],
   products: [
     .executable(name: "dikitgen", targets: ["dikitgen"]),
@@ -12,7 +12,7 @@ let package = Package(
     .library(name: "DIGenKit", targets: ["DIGenKit"])
   ],
   dependencies: [
-    .package(url: "https://github.com/jpsim/SourceKitten.git", from: "0.31.1"),
+    .package(url: "https://github.com/jpsim/SourceKitten.git", from: "0.36.0"),
   ],
   targets: [
     .target(name: "DIKit"),
